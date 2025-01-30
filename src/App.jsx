@@ -88,7 +88,7 @@ function App() {
         <section className="min-h-screen flex flex-col">
           <Header />
           {output ? (
-            <Information />
+            <Information output={output} />
           ) : loading ? (
             <Transcribing />
           ) : isAudioAvailable ? (
@@ -102,7 +102,6 @@ function App() {
             <HomePage setFile={setFile} setAudioStream={setAudioStream} />
           )}
         </section>
-        <h1 className="text-green-400">Test</h1>
         <footer></footer>
       </div>
     </>
