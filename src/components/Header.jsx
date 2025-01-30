@@ -13,7 +13,7 @@ export default function Header() {
         className="flex items-center gap-2 specialBtn px-4 py-2 rounded-lg text-blue-400 text-sm"
       >
         <p>New</p>
-        <i class="fa-solid fa-plus"></i>
+        <i className="fa-solid fa-plus"></i>
       </a>
     </header>
   );

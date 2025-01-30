@@ -43,6 +43,7 @@ function App() {
           break;
         case "RESULT":
           setOutput(e.data.results);
+          console.log(e.data.results);
           break;
         case "INFERENCE_DONE":
           setFinished(true);
@@ -95,6 +96,7 @@ function App() {
               file={file}
               audioStream={audioStream}
               handleAudioReset={handleAudioReset}
+              handleFormSubmission={handleFormSubmission}
             />
           ) : (
             <HomePage setFile={setFile} setAudioStream={setAudioStream} />
